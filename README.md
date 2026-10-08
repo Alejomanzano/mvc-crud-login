@@ -4,35 +4,6 @@ Aplicación web desarrollada para la materia **Ingeniería Web**, implementando 
 
 El proyecto permite gestionar usuarios mediante operaciones de creación, consulta, actualización y eliminación, manteniendo las rutas del CRUD protegidas mediante autenticación.
 
-<p align="center">
-
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge\&logo=nestjs\&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge\&logo=jsonwebtokens\&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-22.x-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
-![Status](https://img.shields.io/badge/STATUS-Completed-success?style=for-the-badge)
-
-</p>
-
----
-
-## 📋 Índice
-
-* [Descripción del proyecto](#-descripción-del-proyecto)
-* [Objetivos](#-objetivos)
-* [Funcionalidades](#-funcionalidades)
-* [Arquitectura del proyecto](#-arquitectura-del-proyecto)
-* [Autenticación](#-autenticación)
-* [Tecnologías utilizadas](#-tecnologías-utilizadas)
-* [Requisitos](#-requisitos)
-* [Instalación y ejecución](#-instalación-y-ejecución)
-* [Endpoints](#-endpoints)
-* [Pruebas](#-pruebas)
-* [Autor](#-autor)
-* [Licencia](#-licencia)
-
----
-
 ##  Descripción del proyecto
 
 **MVC CRUD Login** es una aplicación desarrollada con **NestJS y TypeScript** como parte de la asignatura Ingeniería Web.

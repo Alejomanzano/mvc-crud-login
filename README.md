@@ -1,4 +1,4 @@
-# 🔐 MVC CRUD Login — NestJS
+# MVC CRUD Login — NestJS
 
 Aplicación web desarrollada para la materia **Ingeniería Web**, implementando el patrón **MVC**, operaciones **CRUD** y un sistema de **autenticación mediante Login y JWT**.
 
@@ -33,7 +33,7 @@ El proyecto permite gestionar usuarios mediante operaciones de creación, consul
 
 ---
 
-## 📌 Descripción del proyecto
+##  Descripción del proyecto
 
 **MVC CRUD Login** es una aplicación desarrollada con **NestJS y TypeScript** como parte de la asignatura Ingeniería Web.
 
@@ -51,7 +51,7 @@ Las operaciones disponibles son:
 
 ---
 
-## 🎯 Objetivos
+##  Objetivos
 
 ### Objetivo general
 
@@ -69,9 +69,9 @@ Desarrollar una aplicación utilizando el patrón MVC que integre operaciones CR
 
 ---
 
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
-### 🔐 Autenticación
+###  Autenticación
 
 * Login mediante correo y contraseña.
 * Validación de credenciales.
@@ -88,7 +88,7 @@ Desarrollar una aplicación utilizando el patrón MVC que integre operaciones CR
 | Actualizar usuario | PUT    | `/users/:id` |
 | Eliminar usuario   | DELETE | `/users/:id` |
 
-### 🔑 Login
+###  Login
 
 | Operación      | Método | Endpoint      |
 | -------------- | ------ | ------------- |
@@ -96,7 +96,7 @@ Desarrollar una aplicación utilizando el patrón MVC que integre operaciones CR
 
 ---
 
-## 🏗️ Arquitectura del proyecto
+##  Arquitectura del proyecto
 
 El proyecto está organizado mediante módulos siguiendo la estructura de NestJS:
 
@@ -120,29 +120,29 @@ src/
 └── main.ts
 ```
 
-### 📁 Auth
+### Auth
 
 Se encarga del sistema de autenticación y del endpoint de Login.
 
-### 📁 Users
+### Users
 
 Contiene la gestión de usuarios y las operaciones CRUD.
 
-### 📁 Guards
+### Guards
 
 Contiene el `JwtAuthGuard`, encargado de proteger las rutas que requieren autenticación.
 
-### 📄 AppModule
+### AppModule
 
 Es el módulo principal encargado de integrar los diferentes módulos de la aplicación.
 
-### 📄 Main
+### Main
 
 Es el punto de entrada de la aplicación NestJS.
 
 ---
 
-## 🔒 Autenticación mediante JWT
+## Autenticación mediante JWT
 
 El flujo de autenticación funciona de la siguiente manera:
 
@@ -183,7 +183,7 @@ Authorization: Bearer <TOKEN>
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 * **NestJS**
 * **TypeScript**
@@ -195,7 +195,7 @@ Authorization: Bearer <TOKEN>
 
 ---
 
-## 💻 Requisitos
+## Requisitos
 
 Antes de ejecutar el proyecto se necesita tener instalado:
 
@@ -213,7 +213,7 @@ Nest CLI: 12.0.8
 
 ---
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 ### 1. Clonar el repositorio
 
@@ -247,11 +247,11 @@ http://localhost:3000
 
 ---
 
-## 🧪 Pruebas
+## Pruebas
 
 Las pruebas fueron realizadas mediante solicitudes HTTP utilizando PowerShell.
 
-### 🔐 Login
+### Login
 
 ```powershell
 Invoke-RestMethod -Uri "http://localhost:3000/auth/login" -Method POST -ContentType "application/json" -Body '{"email":"ariel.manzano@udla.edu.ec","password":"123456"}'
@@ -267,7 +267,7 @@ Inicio Exitoso eyJhbGciOi...
 
 ---
 
-### 🚫 Acceso sin autenticación
+### Acceso sin autenticación
 
 Si se intenta acceder al CRUD sin proporcionar un token:
 
@@ -289,7 +289,7 @@ Esto demuestra que las rutas del CRUD están protegidas.
 
 ---
 
-### 👀 Consultar usuarios
+### Consultar usuarios
 
 Después de obtener el token:
 
@@ -299,7 +299,7 @@ Invoke-RestMethod -Uri "http://localhost:3000/users" -Method GET -Headers @{ Aut
 
 ---
 
-### ➕ Crear usuario
+### Crear usuario
 
 ```powershell
 Invoke-RestMethod -Uri "http://localhost:3000/users" -Method POST -Headers @{ Authorization = "Bearer $token" } -ContentType "application/json" -Body '{"name":"Carlos","lastname":"Perez","email":"carlos@example.com","password":"123456"}'
@@ -307,7 +307,7 @@ Invoke-RestMethod -Uri "http://localhost:3000/users" -Method POST -Headers @{ Au
 
 ---
 
-### ✏️ Actualizar usuario
+### Actualizar usuario
 
 ```powershell
 Invoke-RestMethod -Uri "http://localhost:3000/users/{id}" -Method PUT -Headers @{ Authorization = "Bearer $token" } -ContentType "application/json" -Body '{"name":"Carlos Actualizado","lastname":"Perez","email":"carlos@example.com","password":"123456"}'
@@ -317,7 +317,7 @@ Invoke-RestMethod -Uri "http://localhost:3000/users/{id}" -Method PUT -Headers @
 
 ---
 
-### 🗑️ Eliminar usuario
+### Eliminar usuario
 
 ```powershell
 Invoke-RestMethod -Uri "http://localhost:3000/users/{id}" -Method DELETE -Headers @{ Authorization = "Bearer $token" }
@@ -367,7 +367,7 @@ Invoke-RestMethod -Uri "http://localhost:3000/users/{id}" -Method DELETE -Header
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Alejandro Manzano**
 
@@ -381,13 +381,13 @@ https://github.com/Alejomanzano
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto fue desarrollado con fines **académicos** para la asignatura de Ingeniería Web.
 
 ---
 
-## 🎓 Proyecto académico
+## Proyecto académico
 
 Este proyecto permitió aplicar los siguientes conceptos:
 
@@ -401,4 +401,4 @@ Este proyecto permitió aplicar los siguientes conceptos:
 * Manejo de solicitudes HTTP.
 * Protección de rutas.
 
-**Estado:** ✅ Proyecto académico finalizado.
+**Estado:** Proyecto académico finalizado.
